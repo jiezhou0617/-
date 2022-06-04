@@ -1,0 +1,61 @@
+【CentOS8】
+
+Linux认证（Redhat）
+1、rhcsa 管理员认证
+2、rhce  认证工程师
+3、rhca  架构师
+
+
+-------------------【IPtables和Firewalld、selinux的基础设置】
+
+
+最先出来的是IPtables，其次是Firewallsd
+
+
+
+SeLinux防火墙：
+1、查看sestatus(selinux  status)
+
+2、关闭防火墙：
+进入到SELinux的文件夹里，找到config（配置）文件中修改
+
+/etc/selinux/config
+
+firewalld防火墙：
+
+1、查看 systemctl  status firewalld
+
+2、关闭system  stop firewalld
+
+3、禁止开机启动system  disabled  Firewalld
+
+IPtables防火墙
+
+1、查看规则IPtables -L  -n
+
+2、清空规则IPtables -F
+
+3、保存规则
+
+yum软件包安装
+
+1、首先挂载光盘
+mount   /dev/cdrom  /media
+
+2、配置yum文件
+
+3、保存规则
+
+yum  iptables  save
+
+
+
+
+
+
+【ajva】
+
+https://www.bilibili.com/video/BV1Kt411u7BV?spm_id_from=333.999.0.0
+
+28分钟撤离
+
